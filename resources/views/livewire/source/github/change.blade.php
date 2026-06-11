@@ -61,6 +61,12 @@
                                         <x-external-link />
                                     </x-forms.button>
                                 </a>
+                                <a href="{{ route('source.github.repositories', ['github_app_uuid' => $github_app->uuid]) }}" {{ wireNavigate() }} class="w-fit">
+                                    <x-forms.button
+                                        class="bg-transparent border-transparent hover:bg-transparent hover:border-transparent hover:underline whitespace-nowrap">
+                                        Browse Repositories
+                                    </x-forms.button>
+                                </a>
                             @endcan
                         </div>
                     </div>
